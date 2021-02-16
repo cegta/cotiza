@@ -1,0 +1,59 @@
+.verde-iai-fondo{
+    background-color: #246C3C;
+}
+
+.verde-iai-letras{
+    color: #246C3C;
+}
+
+.verde-cegta-fondo{
+    background-color: #5cb546;
+}
+
+.verde-cegta-letras{
+    color: #5cb546
+}
+
+.azul-cegta-fondo{
+    background-color: #5b799a;
+}
+
+.azul-cegta-letras{
+    color: #5b799a;
+}
+
+img.logo{
+    max-width: 120px;
+    max-height: auto;
+}
+
+.centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.centrado2{
+    text-align: center;
+}
+
+img.imagen{
+    max-width: 350px;
+}
+
+.azul-blue-service-fondo{
+    background-color: #0098ce;
+}
+
+.azul-blue-service-letras{
+    color: #0098ce;
+}
+
+.azul-insima-fondo{
+    background-color:#10b1fd;
+}
+
+.azul-insima-letras{
+    color:#10b1fd;
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotiza tus servicios de CEGTA</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css"href="icons/bootstrap-icons.css">
+</head>
+<body>
+    <!--LOGOTIPO DE CEGTA-->
+    <div class="row azul-cegta-fondo">
+        <div class="container-fluid col-md-12">
+            <h1 class="text-center text-white">Capacitación Empresarial y Gestoría Técnica Ambiental</h1>
+        </div>
+    </div>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark azul-cegta-fondo">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">CEGTA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#cegta">CEGTA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ingenieria-ambiental-integral">Ingeniería Ambiental Integral</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blue-service">Blue Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#insima">INSIMA</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav><br>
+
+    <!--Carousel y presentación-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="text-dark text-center">Conoce todos nuestros servicios y los de nuestros aliados comerciales en un solo lugar. <br>¡Aquí también puedes cotizar nuestros servicios!</h3><br>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/title-1.png" class="d-block centrado img-fluid" width="auto" height="150">
+            </div>
+            <div class="carousel-item">
+                <img src="img/title-3.png" class="d-block centrado img-fluid" width="auto" height="150">
+            </div>
+            <div class="carousel-item">
+                <img src="img/title-2.png" class="d-block centrado img-fluid" width="auto" height="150">
+            </div>
+            <div class="carousel-item">
+                <img src="img/title-4.png" class="d-block centrado img-fluid" width="auto" height="150">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div><br>
+
+
+    <!--SERVICIOS CEGTA-->
+    <div class="container-fluid bg-dark" id="cegta">
+        <div class="row">
+            <div class="col-sm-12 col-lg-9">
+                <br>
+                <h2 class="verde-cegta-letras text-start">Capacitacion Empresarial y Gestoría Técnica Ambiental (CEGTA)</h2>
+                <p class="text-light"> Consultoría y Gestoría en Servicios Ambientales, Proyectos, Capacitaciones y Seguridad e Higiene.<br>Acreditados ante la Entidad Mexicana de Acreditación (EMA) y la Secretaría del Trabajo y Previsión Social.<br>
+                <strong>Acreditado como capacitador externo en portal de STPS con RFC: </strong>SOVN660316C91<br>
+                <strong>Laboratorio de ensayos ante EMA codificación: </strong>ETRE-084-LE<br>
+                <strong>Unidad de verificación para seguridad e higiene en el trabajo ante EMA: </strong>ETSH-075-UV</p>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <p class="text-center"><br><br>
+                <img src="img/cegta.png" alt="" class="logo">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid verde-cegta-fondo"><br><br>
+    <div class="container centrado2">
+        <div class="row">
+            <div class="col-sm-12 col-lg-9">
+                <form method="post" action="cotiza-cegta.php">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre de contacto *</label>
+                    <input name="nombre-cegta" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Su nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Razón social</label>
+                    <input name="razon-social-cegta" type="enterprise" class="form-control" id="exampleFormControlInput2" placeholder="Empresa de Servicios, S.A. de C.V.">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput3" class="form-label">Dirección de correo *</label>
+                    <input name="correo-cegta" type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput4" class="form-label">Número telefónico o red social (WhatsApp/Telegram/Signal/etc)</label>
+                    <input name="telefono-cegta" type="phone" class="form-control" id="exampleFormControlInput4" placeholder="123 456 7890">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput5" class="form-label">Estado *</label>
+                    <input name="estado-cegta" type="state" class="form-control" id="exampleFormControlInput5" placeholder="Ciudad de México/Chiapas/Querétaro/..." required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput6" class="form-label">Municipio</label>
+                    <input name="municipio-cegta" type="munic" class="form-control" id="exampleFormControlInput6">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList" class="form-label">Trámite</label>
+                    <select name="tramite-cegta" class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona tu trámite</option>
+                        <option value="Licencia-de-funcionamiento">Licencias de funcionamiento</option>
+                        <option value="Programa-Interno-de-Protección-Civil">Programa Interno de Protección Civil</option>
+                        <option value="Permiso-de-descarga-de-aguas-residuales">Permiso de descarga de aguas residuales</option>
+                        <option value="Dictamen-de-factibilidad">Dictámenes de factibilidad</option>
+                        <option value="Alta-como-generador-de-residuos">Alta como empresa generadora de residuos</option>
+                        <option value="Otros">Otros (gestoría, consultoría, etc...)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList2" class="form-label">Cursos de capacitación</label>
+                    <select name="curso-cegta" class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona tu curso de capacitación</option>
+                        <option value="CURSO-Manejo-de-RP-y-RNP">Manejo Integral del Tratamiento de Materiales y/o RP y No Peligrosos para su tratamiento y disposición final</option>
+                        <option value="CURSO-Tratamiento-FQ-de-Aguas-Residuales">Tratamiento FQ de Aguas Residuales para su disposición final y re-uso</option>
+                        <option value="CURSO-Técnicas-y-metodologías-de-laboratorio-en-aguas-residuales-materiales-y-RP-para-su-tratamiento">Técnicas y Metodologías de Laboratorio en Aguas Residuales, Materiales y/o RP para su Tratamiento</option>
+                        <option value="CURSO-Ventas-motivación-y-servicio-al-cliente">Ventas, Motivación y Servicio al Cliente</option>
+                        <option value="CURSO-Manejo-integral-de-seguridad-y-salud-ocupacional-ISO-18001">Manejo Integral de Seguridad y Salud Ocupacional ISO 18001</option>
+                        <option value="CURSO-Buenas-prácticas-de-manufacturas-orden-y-limpieza">Buenas Prácticas de Manufacturas, Orden y Limpieza</option>
+                        <option value="CURSO-Formación-empresarial-y-crecimiento-de-PYMES">Formación Empresarial en Crecimiento de PYMES</option>
+                        <option value="CURSO-Control-y-prevención-de-plagas-y-roedores">Manejo Integral en el Control y Prevención de Plagas y Roedores</option>
+                        <option value="CURSO-Combate-de-incendios-y-tipos-de-extintores">Manejo Integral en Medidas de Combate de Incendios y Tipos de Extintores</option>
+                        <option value="CURSO-Trabajos-en-alturas">Manejo Integral de Trabajo de Altura en la Prevención de Accidentes de Trabajo</option>
+                        <option value="CURSO-Trabajo-en-áreas-confinadas">Servicio de Extracción, Limpieza y Desazolve en Á. Confinadas con Materiales y/o RP</option>
+                        <option value="CURSO-Identificación-rotulación-en-la-transportación-de-materiales-y-RP-No-Peligrosos-y-vehicular">Identificación, Rotulación en la Transportación de Materiales y/o RP y No peligrosos y Vehicular</option>
+                        <option value="CURSO-Análisis-de-precios-unitarios">Análisis de Precios Unitarios y Determinación del Costo de Servicios</option>
+                        <option value="CURSO-Manejo-de-autorizaciones-y-contratos-de-servicios-para-ventas-en-bienes-y-servicios">Manejo de Autorizaciones y Contratos de Servicios para Ventas en Bienes y Servicios</option>
+                        <option value="CURSO-Cumplimiento-en-medidas-de-normatividad-laboral-en-ruido-iluminación-y-salud-ocupacional">Cumplimiento en Medidas de Normatividad Laboral en Ruido, Iluminación y Salud Ocupacional e Id. de Fluidos</option>
+                        <option value="CURSO-Sistema-de-protección-y-requerimientos-de-seguridad-en.maquinaria-herramientos-y-equipos-de-uso-en-el-trabajo">Sistema de Protección y Req. de Seg. en Maquinaria, Herramientas y Equipos en uso en el Trabajo</option>
+                        <option value="CURSO-Manejo-y-almacenamiento-de-materiales">Manejo y Almacenamiento de Materiales y Condiciones de Seguridad y Salud en el Trabajo</option>
+                        <option value="CURSO-Funcionamiento-y-condiciones-de-medidas-de-seguridad-en-recipientes-a-presión-generadores-de-vapor-y-calderas">Funcionamiento y Condiciones de Medidas de Seg. en Recipientes a Presión, Generadores de Vapor y Calderas</option>
+                        <option value="CURSO-Curso-de-montacargas">Medidas y Requerimientos de Seguridad para la Operación de Montacargas en el Trabajo</option>
+                        <option value="CURSO-Autorizaciones-para-realizar-actividades-peligrosas-en-el-centro-de-trabajo">Autorizaciones de Trabajo para Realizar Actividades Peligrosas en el Centro de Trabajo</option>
+                        <option value="CURSO-Primeros-auxilios-RCP-y-DEA">Primeros Auxilios, RCP y DEA</option>
+                        <option value="CURSO-Seguridad-eléctrica">Seguridad Eléctrica</option>
+                        <option value="CURSO-Análisis-de-seguridad-en-el-trabajo">Análisis de Seguridad en el Trabajo</option>
+                        <option value="CURSO-Plan-de-respuesta-a-emrgencias">Plan de Respuesta a Emergencias</option>
+                        <option value="CURSO-Conocimientos-de-los-riesgos-detectados-en-el-atlas-de-riesgos">Conocimientos de los Riesgos detectados en el Análisis de Riesgo de la Instalación</option>
+                        <option value="CURSO-Uso-conservacion-y-almacenamiento-de-herramientas">Uso, Conservación y Almacenamiento de Herramientas</option>
+                        <option value="CURSO-Verificador-en-instalaciones-de-Gas-LP-y-o-Natural">Verificador en Instalaciones de Gas LP y/o Natural</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripción de su trámite/servicio/estudio/curso/etc</label>
+                    <textarea name="mensaje-cegta" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <h3 class="text-dark">Contacto directo</h3><br>
+                <i class="bi bi-building" style="font-size:2rem;"></i>
+                <p><br>Av. Insurgentes #315<br>Col. Santiago Tlaxomulco<br>C.P. 50280<br>Toluca, Estado de México</p><br>
+                <i class="bi bi-telephone-fill" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-540-9022</p><br>
+                <i class="bi bi-whatsapp" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-420-9722</p><br>
+                <i class="bi bi-facebook" style="font-size:2rem;"></i>
+                <p><br>CEGTA - Capacitación Empresarial y Gestoría Técnica Ambiental</p><br>
+                <i class="bi bi-mailbox2" style="font-size:2rem;"></i>
+                <p><br>nikolaymx@yahoo.com<br>hideonbush1599@gmail.com</p><br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--SERVICIOS BLUE SERVICE-->
+    <div class="container-fluid bg-dark" id="blue-service">
+        <div class="row">
+            <div class="col-sm-12 col-lg-9">
+                <br>
+                <h2 class="azul-blue-service-letras text-start">Blue Service, S.A. de C.V.</h2>
+                <p class="text-light">Servicios de recoleccion, limpieza y desazolve en general.<br>NUMERO LICENCIA<br>NUMERO LICENCIA<br>NUMERO LICENCIA<br>NUMERO LICENCIA</p>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <p class="text-center"><br><br>
+                <img src="img/blue-service.png" alt="" class="logo img-fluid">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid azul-blue-service-fondo"><br><br>
+    <div class="container centrado2">
+        <div class="row">
+            <div class="col-sm-12 col-lg-9 text-dark">
+                <form method="post" action="cotiza-blue-service.php">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre de contacto *</label>
+                    <input name="nombre-blue-service" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Su nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Razón social</label>
+                    <input name="razon-social-blue-service" type="enterprise" class="form-control" id="exampleFormControlInput2" placeholder="Empresa de Servicios, S.A. de C.V.">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput3" class="form-label">Dirección de correo *</label>
+                    <input name="correo-blue-service" type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput4" class="form-label">Número telefónico o red social (WhatsApp/Telegram/Signal/etc)</label>
+                    <input name="telefono-blue-service" type="phone" class="form-control" id="exampleFormControlInput4" placeholder="123 456 7890">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput5" class="form-label">Estado/Ciudad *</label>
+                    <select name="estado-blue-service" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su Estado/Ciudad</option>
+                        <option value="Licencia-de-funcionamiento">Ciudad de México</option>
+                        <option value="Programa-Interno-de-Protección-Civil">Toluca</option>
+                        <option value="Permiso-de-descarga-de-aguas-residuales">Pachuca</option>
+                        <option value="Licencia-de-funcionamiento">Querétaro</option>
+                        <option value="Programa-Interno-de-Protección-Civil">Puebla</option>
+                        <option value="Permiso-de-descarga-de-aguas-residuales">Cuernavaca</option>
+                        <option value="Permiso-de-descarga-de-aguas-residuales">Morelia</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList" class="form-label">Servicio</label>
+                    <select name="servicio-blue-service" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su servicio</option>
+                        <option value="Desazolve-fosas-carcamos">Desazolve de fosas sépticas-cárcamos-trampas de grasa.</option>
+                        <option value="Succion-desechos-lodosos">Succión o recolección de desechos lodosos (industria y restaurantes)</option>
+                        <option value="Desazolve-red-drenaje">Desazolve de red de drenaje sanitaria/pluvial</option>
+                        <option value="Sanitarios-portátiles">Sanitarios portátiles</option>
+                        <option value="Mantenimiento-PTAR">Mantenimiento a PTAR</option>
+                        <option value="Limpieza-cisternas-tinacos">Limpieza de Cisternas y Tinacos</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripción de su servicio (cantidad, características, etc)</label>
+                    <textarea name="mensaje-blue-service" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-lg-3 text-dark">
+                <h3 class="text-dark">Contacto directo</h3><br>
+                <i class="bi bi-telephone-fill" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-540-9022</p><br>
+                <i class="bi bi-whatsapp" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-540-9022</p><br>
+                <i class="bi bi-mailbox2" style="font-size:2rem;"></i>
+                <p><br>nikolaymx@yahoo.com</p><br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!--SERVICIOS INGENIERÍA AMBIENTAL INTEGRAL-->
+    <div class="container-fluid bg-dark" id="ingenieria-ambiental-integral">
+        <div class="row">
+            <div class="col-sm-12 col-lg-9">
+                <br>
+                <h2 class="verde-iai-letras text-start">Ingeniería Ambiental Integral, S.A. de C.V.</h2>
+                <p class="text-light">Empresa autorizada en la recolección, transporte y manejo de materiales y/o residuos peligrosos para su tratamiento, reciclaje, reuso y envío a disposición final.<br>NUMERO LICENCIA<br>NUMERO LICENCIA<br>NUMERO LICENCIA<br>NUMERO LICENCIA</p>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <p class="text-center"><br><br><br>
+                <img src="img/iai.png" alt="" class="logo img-fluid">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid verde-iai-fondo"><br><br>
+    <div class="container centrado2">
+        <div class="row">
+            < class="col-sm-12 col-lg-9 text-light">
+                <form method="post" action="cotiza-ingenieria.php">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre de contacto *</label>
+                    <input name="nombre-ingenieria" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Su nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Razón social</label>
+                    <input name="razon-social-ingenieria" type="enterprise" class="form-control" id="exampleFormControlInput2" placeholder="Empresa de Servicios, S.A. de C.V.">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput3" class="form-label">Dirección de correo *</label>
+                    <input name="correo-ingenieria" type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput4" class="form-label">Número telefónico o red social (WhatsApp/Telegram/Signal/etc)</label>
+                    <input name="telefono-ingenieria" type="phone" class="form-control" id="exampleFormControlInput4" placeholder="123 456 7890">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput5" class="form-label">Estado *</label>
+                    <input name="estado-ingenieria" type="state" class="form-control" id="exampleFormControlInput5" placeholder="Ciudad de México/Chiapas/Querétaro/..." required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput6" class="form-label">Municipio</label>
+                    <input name="municipio-ingenieria" type="munic" class="form-control" id="exampleFormControlInput6">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList" class="form-label">Servicio</label>
+                    <select name="servicio-ingenieria" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su servicio</option>
+                        <option value="Recoleccion-RME">Recolección de Residuos de Manejo Especial</option>
+                        <option value="Recoleccion-RPBI">Recolección de Residuos Peligrosos Biológico-Infecciosos</option>
+                        <option value="Recoleccion-RP">Recolección de Residuos Peligrosos</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripción de su servicio (cantidad, características, etc)</label>
+                    <textarea name="mensaje-ingenieria" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-lg-3 text-light">
+                <h3 class="text-light">Contacto directo</h3><br>
+                <i class="bi bi-building" style="font-size:2rem;"></i>
+                <p><br>Av. Insurgentes #315<br>Col. Santiago Tlaxomulco<br>C.P. 50280<br>Toluca, Estado de México</p><br>
+                <i class="bi bi-telephone-fill" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-540-9022</p><br>
+                <i class="bi bi-whatsapp" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-540-9022</p><br>
+                <i class="bi bi-mailbox2" style="font-size:2rem;"></i>
+                <p><br>nikolaymx@yahoo.com</p><br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!--SERVICIOS INSIMA-->
+    <div class="container-fluid bg-dark" id="insima">
+        <div class="row">
+            <div class="col-sm-12 col-lg-9">
+                <br>
+                <h2 class="azul-insima-letras text-start">Instituto Nacional de Seguridad Industrial y Medio Ambiente, S.A. de C.V.</h2>
+                <p class="text-light">Especialistas en Seguridad, Higiene, Medio Ambiente, Protección Civil y Capacitación.<br><strong>Entidad Mexicana de Acreditación: </strong>AL-0132-023/12 (Higiene y Ambiente Laboral) y FF-0129-027/12 (Fuentes Fijas)<br><strong>Secretaría del Trabajo y Previsión Social: </strong>INS-04-08-09-Q55-0015 (Agente Capacitador)<br><strong>Protección Civil: </strong>GEM-SGG/CGPC/DVS/RCEINS040809Q55-2018 (tercer acreditado Estado de México)<br></p>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <p class="text-center"><br><br>
+                <img src="img/insima.png" alt="" class="logo img-fluid">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid azul-blue-service-fondo"><br><br>
+    <div class="container centrado2">
+        <div class="row">
+            <div class="col-sm-12 col-lg-9 text-dark">
+                <form method="post" action="cotiza-insima.php">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre de contacto *</label>
+                    <input name="nombre-insima" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Su nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Razón social</label>
+                    <input name="razon-social-insima" type="enterprise" class="form-control" id="exampleFormControlInput2" placeholder="Empresa de Servicios, S.A. de C.V.">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput3" class="form-label">Dirección de correo *</label>
+                    <input name="correo-insima" type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput4" class="form-label">Número telefónico o red social (WhatsApp/Telegram/Signal/etc)</label>
+                    <input name="telefono-insima" type="phone" class="form-control" id="exampleFormControlInput4" placeholder="123 456 7890">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput5" class="form-label">Estado *</label>
+                    <input name="estado-insima" type="state" class="form-control" id="exampleFormControlInput5" placeholder="Estado de México/Yucatán/Baja California" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput6" class="form-label">Municipio</label>
+                    <input name="municipio-insima" type="munic" class="form-control" id="exampleFormControlInput6">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput5" class="form-label">Estudios y análisis de riesgo de trabajo</label>
+                    <select name="estudios-trabajo-insima" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su estudio o análisis</option>
+                        <option value="Estudio-de-edificios-locales-condiciones-seguridad">Estudio de edificios y locales, condiciones de seguridad</option>
+                        <option value="Determinacion-del-grado-de-incendio">Determinación del grado de incendio o explosión</option>
+                        <option value="Estudio-de-riesgo-potencial-de-maquinaria-y-equipo">Estudio del grado de riesgo potencial de maquinaria y equipo</option>
+                        <option value="Manual-de-instrucciones-de-herramientas">Manual de instrucciones de herramientas</option>
+                        <option value="Estudio-para-analizar-riesgos-de-sustancias-quimicas-peligrosas">Estudio para analizar los riesgos de sustancias químicas peligrosas</option>
+                        <option value="Reconocimiento-de-sustancias-quimicas-en-el-ambiente-laboral">Reconocimiento de sustancias químicas en el ambiente laboral</option>
+                        <option value="Analisis-para-determinar-el-EPP">Análisis para determinar el EPP</option>
+                        <option value="Verificacion-de-recipientes-sujetos-a-presion">Verificación de recipientes sujetos a presión</option>
+                        <option value="Determinacion-de-colores-en-tuberias">Determinación de colores y señales de seguridad e higiene y código de colores en tuberías</option>
+                        <option value="Analisis-de-riesgo-en-soldadura-y-oxicorte">Análisis de riesgos en soldadura y corte</option>
+                        <option value="Analisis-de-riesgo-mantenimiento-a-instalaciones-electricas">Análisis de riesgo durante actividades de mantenimiento a instalaciones eléctricas</option>
+                        <option value="Organizacion-y-funcion-de-servicios-preventivos-de-seguridad">Organización y función de servicios preventivos de seguridad y salud en el trabajo</option>
+                        <option value="Identificacion-analisis-prevencion-de-riesgos-psicosociales">Identificación análisis y prevención de factores de riesgo psicosocial en el trabajo</option>
+                        <option value="Identificacion-analisis-prevencion-control-de-riesgo-ergonomico">Identificación, análisis, prevención y control de factores de riesgo ergonómico en el trabajo</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList6" class="form-label">Estudios de higiene y ambiente laboral</label>
+                    <select name="estudios-higiene-insima" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su estudio</option>
+                        <option value="Ruido">Ruido (NER) (DOSIS)</option>
+                        <option value="Temperaturas-elevadas">Temperaturas elevadas</option>
+                        <option value="Temperaturas-abatidas">Temperaturas abatidas</option>
+                        <option value="Iluminacion">Iluminación</option>
+                        <option value="Evaluacion-ruido-a-la-colindancia">Evaluación de ruido a la colindancia</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput7" class="form-label">Capacitacion</label>
+                    <select name="capacitacion-insima" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su curso de capacitación</option>
+                        <option value="Comision-de-seguridad">Comisión de seguridad</option>
+                        <option value="Sustancias-quimicas">Sustancias químicas</option>
+                        <option value="Manejo-seguro-de-montacargas">Manejo seguro de cargas (montacargas)</option>
+                        <option value="Manejo-de-herramientas">Manejo de herramientas</option>
+                        <option value="Uso-mantenimiento-y-dotacion-del-EPP">Uso, mantenimiento y dotación del EPP</option>
+                        <option value="Trabajos-peligrosos">Trabajos peligrosos (electricidad, soldadura, alturas)</option>
+                        <option value="Manejo-de-materiales-peligrosos">Manejo de materiales peligrosos</option>
+                        <option value="Manejo-de-RP">Manejo de residuos peligrosos</option>
+                        <option value="Recipientes-sujetos-a-presion">Recipientes sujetos a presión</option>
+                        <option value="Electridad-estatica">Electricidad estática</option>
+                        <option value="Funcion-de-una-brigada-de-proteccion-civi">Función de una brigada de protección civil</option>
+                        <option value="Uso-y-mantenimiento-de-extintores">Uso y mantenimiento de extintores</option>
+                        <option value="Brigada-de-combate-contra-incendios">Brigada de combate contra incendios</option>
+                        <option value="Brigada-de-primeros-auxilios">Brigada de primeros auxilios (vivenciales)</option>
+                        <option value="Brigada-de-busqueda-y-rescate">Brigada de búsqueda y rescate (vivenciales)</option>
+                        <option value="Brigada-de-comunicaciones">Brigada de comunicaciones (vivenciales)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList7" class="form-label">Servicios de protección civil</label>
+                    <select name="pc-insima" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su servicio</option>
+                        <option value="Estudio-de-grado-de-riesgo">Estudio de grado de riesgo</option>
+                        <option value="Determinacion-de-señalizacion">Determinación de señalización</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList8" class="form-label">Servicios y estudios para cumplimiento con ASEA</label>
+                    <select name="servicios-asea-insima" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su servicio o estudio</option>
+                        <option value="MIA">Manifiestos de impacto ambiental (MIA)</option>
+                        <option value="ERI">Estudio de riesgo ambiental (ERI)</option>
+                        <option value="PPA">Programas de prevencion de accidentes (PPA)</option>
+                        <option value="LAU">Licencia ambiental única (LAU)</option>
+                        <option value="COA">Cédula de operación anual (COA)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList9" class="form-label">Servicios adicionales</label>
+                    <select name="adicionales-insima" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su servicio</option>
+                        <option value="Venta-y-mantenimiento-de-equipos-contra-incendios">Venta y mantenimiento de equipos contra incendios (extintores)</option>
+                        <option value="Señalizacion-e-impresion-digital">Señalización e impresión digital</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripción de su servicio/estudio/capacitación (cantidad, características, etc)</label>
+                    <textarea name="mensaje-insima" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-lg-3 text-dark">
+                <h3 class="text-dark">Contacto directo</h3><br>
+                <i class="bi bi-building" style="font-size:2rem;"></i>
+                <p><br>Calle Juárez #12<br>Col. San José de los Leones<br>C.P. 53760<br>Naucalpan, Estado de México</p><br>
+                <i class="bi bi-telephone-fill" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-540-9022</p><br>
+                <i class="bi bi-whatsapp" style="font-size:2rem;"></i>
+                <p><br>722-423-7903<br>722-540-9022</p><br>
+                <i class="bi bi-mailbox2" style="font-size:2rem;"></i>
+                <p><br>nikolaymx@yahoo.com</p><br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row azul-cegta-fondo">
+                <div class="col-md-4">
+                    <p class="text-start text-white"><br><strong>Puede visitarnos en: </strong><br><br>Avenida Insurgentes #315 <br>Col. Santiago Tlaxomulco <br>C.P. 50280 <br>Toluca, Estado de México</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-start text-white"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugit voluptatibus tempore maiores sint ut quaerat illo, cupiditate similique iusto corrupti nihil nobis porro obcaecati culpa sequi dolores. Quod, repellendus.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-start text-white"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, alias. Magni laudantium impedit quis praesentium ipsum ratione esse earum eius soluta similique quas, placeat nulla iure temporibus facere doloribus expedita.</p>
+                </div><br><br>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row azul-cegta-fondo">
+                <div class="col-md-10">
+                    <p class="text-start text-white">Copyright 2021, CEGTA <br>Los logotipos utilizados pertenecen a sus respectivas personas morales.</p>
+                </div>
+                <div class="col-md-2 text-white">Código realizado por CEGTA</div><br><br>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>
